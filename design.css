@@ -19,3 +19,34 @@ article p{
 .featured:hover{
     background-color:#FFB300;
 }
+
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    position: absolute;
+    left: -500px; 
+    top: 50px;
+    transition: transform 0.5s ease-in-out;
+    font-size: 50pt bold;
+}
+
+.trigger:hover ~ .image {
+    transform: translateX(500px); 
+}
+
+.image-size {
+    position: middle;
+    height: 100px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trigger:hover{
+    rotate: 25%;
+}
